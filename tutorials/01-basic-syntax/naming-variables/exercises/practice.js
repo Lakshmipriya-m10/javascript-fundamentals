@@ -20,6 +20,12 @@ let s2 = "LC-39A";
 let status = "CRITICAL";
 let msg = "Oxygen levels dropping.";
 
+
+let spacecraftName = "Discovery";
+let spacecraftModel = "LC-39A";
+let status = "CRITICAL";
+let emergencyMsg = "Oxygen levels dropping.";
+
 /** NUMBERS **/
 
 // 2. TODO: Improve the variable names below.
