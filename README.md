@@ -124,9 +124,9 @@ _Coming soon!_
 | :------------------------------------- | :------------------------------------------------------------------------- | :----------------------------------- | -----: |
 | Introduction to Functions              | [functions-intro](/tutorials/07-functions/functions-intro/)                | [Demo](https://youtu.be/u7lPKTwcohc) |   6:08 |
 | Function Input & Output                | [input-output](/tutorials/07-functions/input-output/)                      | [Demo](https://youtu.be/jSErMvfcwqI) |  10:04 |
-| Variable Scope                         | [variable-scope](/tutorials/07-functions/variable-scope/)                  | _Coming soon!_                       |        |
-| Procedural Recursion                   | [recursion-procedural](/tutorials/07-functions/recursion-procedural/)      | _Coming soon!_                       |        |
-| Reductive Recursion                    | [recursion-reductive](/tutorials/07-functions/recursion-reductive/)        | _Coming soon!_                       |        |
+| Variable Scope                         | [variable-scope](/tutorials/07-functions/variable-scope/)                  | [Demo](https://youtu.be/th_YkzQh6is) |   6:13 |
+| Procedural Recursion                   | [recursion-procedural](/tutorials/07-functions/recursion-procedural/)      | [Demo](https://youtu.be/i8wz8EKtuBo) |   9:50 |
+| Reductive Recursion                    | [recursion-reductive](/tutorials/07-functions/recursion-reductive/)        | [Demo](https://youtu.be/Nwtxb4WMeck) |   4:51 |
 | Helper Functions                       | [helper-functions](/tutorials/07-functions/helper-functions)               | _Coming soon!_                       |        |
 | Interactive Programming with Functions | [interactive-programming](/tutorials/07-functions/interactive-programming) | _Coming soon!_                       |        |
 |                                        |                                                                            | **TOTAL**                            |        |
