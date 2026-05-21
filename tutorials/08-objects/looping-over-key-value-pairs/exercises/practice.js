@@ -13,6 +13,13 @@ const stationPingsMs = {
 	baseCidonia: 310,
 };
 
+
+
+for (let stationkey in stationPingsMs )
+{
+    let pingvalue = stationPingsMs[stationkey];
+    console.log(`Connection to ${stationkey} latency is: ${pingvalue} ms.`);
+}
 /*
     TODO: Use a 'for...in' loop to iterate through the 'stationPingsMs' object.
     Log a network diagnostic statement for each entry using a template literal:
@@ -27,6 +34,15 @@ const pdcAmmoLocker = {
 	bridgeDefenses: 0,
 };
 
+let keys = Object.keys(pdcAmmoLocker);
+for(let key of keys)
+
+{
+    if(pdcAmmoLocker[key] === 0)
+    {
+        console.log(`CRITICAL DEPLETION: ${key} ammo is completely empty!`);
+    }
+}
 /*
     TODO: Use 'Object.keys()' to extract an array of all keys from 'pdcAmmoLocker'.
     Iterate over that keys array using a 'for...of' loop.
