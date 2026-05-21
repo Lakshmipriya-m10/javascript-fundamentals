@@ -44,20 +44,22 @@ broadcastRadarPing(60);
 /** EXAMPLE 2 - DIVIDE AND CONQUER (Grid Sub-division) **/
 
 // Simulating search-and-rescue teams splitting up grid sectors
-function scanGridSector(sectorSizeKm) {
+function scanGridSector(sectorName, sectorSizeKm) {
 	// BASE CASE: Sector is small enough for a single drone to scan
 	if (sectorSizeKm <= 5) {
-		console.log(`Drone deployed to scan final ${sectorSizeKm}km localized area.`);
+		console.log(`Drone deployed to scan ${sectorName} (${sectorSizeKm}km zone).`);
 		return;
 	}
 
-	// RECURSIVE CASE: Sector is too big. Split it in half and send teams.
+	// RECURSIVE CASE: Sector is too big. Split it in half.
 	let subSectorSize = sectorSizeKm / 2;
 	console.log(
-		`Sector size ${sectorSizeKm}km too large. Sub-dividing into two ${subSectorSize}km zones...`
+		`Sector ${sectorName} (${sectorSizeKm}km) too large. Sub-dividing...`
 	);
 
-	scanGridSector(subSectorSize); // Scan first sub-zone
+	// Conquering BOTH halves:
+	scanGridSector(`${sectorName} - Left Half`, subSectorSize);  // Scan first sub-zone
+	scanGridSector(`${sectorName} - Right Half`, subSectorSize); // Scan second sub-zone
 }
 
-scanGridSector(20);
+scanGridSector("Main Grid", 20);
