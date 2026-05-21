@@ -35,12 +35,12 @@ const pdcAmmoLocker = {
 };
 
 let keys = Object.keys(pdcAmmoLocker);
-for(let key of keys)
+for(let pdcAmmoLockerkey of keys)
 
 {
-    if(pdcAmmoLocker[key] === 0)
+    if(pdcAmmoLocker[pdcAmmoLockerkey] === 0)
     {
-        console.log(`CRITICAL DEPLETION: ${key} ammo is completely empty!`);
+        console.log(`CRITICAL DEPLETION: ${pdcAmmoLockerkey} ammo is completely empty!`);
     }
 }
 /*
