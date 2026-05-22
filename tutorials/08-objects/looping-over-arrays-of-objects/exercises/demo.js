@@ -41,6 +41,11 @@ for (let ship of sectorFleet)
 formatHeader("Aggregating Total Cargo Mass (Standard for)", false);
 
 let totalSectorTonnage = 0;
+for (let ship of sectorFleet){
+
+    totalSectorTonnage += ship.cargoWeight;
+}
+console.log(`Total Tonnage : ${totalSectorTonnage}`);
 
 // DEMO: Loop over the array to calculate combined total
 
