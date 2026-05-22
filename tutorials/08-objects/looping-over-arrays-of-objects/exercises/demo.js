@@ -16,7 +16,7 @@ const sectorFleet = [
 
 /** EXAMPLE 1 - DISPATCH PATROL ENGINE **/
 
-formatHeader("Fleet Status Sweep (for...of)", false);
+formatHeader("Fleet Status Sweep (for...of)", true);
 
 for (let ship of sectorFleet)
 
