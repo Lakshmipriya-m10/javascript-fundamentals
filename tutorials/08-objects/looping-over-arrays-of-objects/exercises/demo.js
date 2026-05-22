@@ -18,6 +18,20 @@ const sectorFleet = [
 
 formatHeader("Fleet Status Sweep (for...of)", false);
 
+for (let ship of sectorFleet)
+
+{
+    if(ship.status == "Active")
+    {
+        console.log(`Ship Name : ${ship.name} - ${ship.cargoWeight} is Active`);
+    
+    }
+    else
+    { 
+        console.log(`Ship Name : ${ship.name} - ${ship.cargoWeight} is under maintaintance`);
+}
+}
+
 // DEMO: Loop over the array of ship objects. 
 //  - If the vessel is active,print a report with their payload. 
 //  - If it is undergoing maintenance,print a report stating that instead.

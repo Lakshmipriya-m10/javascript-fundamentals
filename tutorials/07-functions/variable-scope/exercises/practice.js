@@ -9,9 +9,10 @@
 
 // TODO: Declare a global constant on the line below named
 // 'STATION_ID' and set it to "Tycho".
-
+let STATION_ID = 100;
 function broadcastBeacon() {
 	// TODO: Inside this function, log `Broadcasting from: ${STATION_ID}`.
+console.log `Broadcasting from: ${STATION_ID}`;
 }
 
 // TODO: Run the program to verify the scope is valid.
