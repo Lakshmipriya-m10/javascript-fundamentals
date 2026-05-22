@@ -4,9 +4,15 @@
     Practice drilling into array-wrapped data structures to filter 
     and evaluate real-time system states.
 */
-
+function heading (title,isAlert)
+{
+    let titleName = title.toUpperCase();
+    let titleStatus = isAlert ? `🔥---------------------------------------.🔥` : `😀-------------------------------------😀`;
+    console.log(`\n ${titleStatus}\n ${titleName}\n ${titleStatus}`);
+    
+}
 /** EXERCISE 1: ENVIRONMENT CHECKUP **/
-
+ heading("envirnoment check",true)
 const atmosphericScrubbers = [
 	{ zone: "Command Deck", filterLifePercent: 88 },
 	{ zone: "Engineering Bay", filterLifePercent: 32 },
@@ -16,9 +22,8 @@ const atmosphericScrubbers = [
 for(let scrubber of atmosphericScrubbers){
     if(scrubber.filterLifePercent < 40)
     {
-console.log(` 🔥 Warning! FilterLife Percent is less than 40 🔥 ${scrubber.zone} less ${scrubber.filterLifePercent} % `);
-    } else
-console.log(`Filter Core over 40% 👍`);
+console.log(` 🔥 Warning! FilterLife Percent of ${scrubber.zone} is less than 40 % `);
+    } 
 
 }
 /*
@@ -29,7 +34,7 @@ console.log(`Filter Core over 40% 👍`);
 */
 
 /** EXERCISE 2: INTEL METRIC REPORTING **/
-
+heading("intel metric reporting ",false)
 const targetDrones = [
 	{ designation: "Drone-Alpha", threatScore: 4 },
 	{ designation: "Drone-Beta", threatScore: 9 },
