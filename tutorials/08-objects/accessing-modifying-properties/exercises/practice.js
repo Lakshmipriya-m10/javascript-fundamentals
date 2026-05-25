@@ -4,6 +4,17 @@
     using both static and dynamic lookups.
 */
 
+function titleBorder(title, border)
+{
+
+
+    console.log(`${border}\n ${title}\n ${border}\n`);
+
+}
+ let borderDesign ="---------------------------------------";
+   
+    titleBorder("EXERCISE 1: COCKPIT CONFIGURATION", borderDesign);
+
 /** EXERCISE 1: COCKPIT CONFIGURATION **/
 
 const communicationSpecs = {
@@ -13,12 +24,18 @@ const communicationSpecs = {
 };
 
 // TODO: Update the 'frequencyGhz' to 9.1 using dot notation.
+communicationSpecs.frequencyGhz = 9.1;
+console.log (`Update the frequencyGhz using dot notation : ${communicationSpecs.frequencyGhz}`);
 
 // TODO: Update the 'encryption-protocol' to "RSA-4096" using bracket notation.
+communicationSpecs["encryption-protocol"] = "RSA-4096";
 
 // TODO: Log a full statement confirming the update using both bracket notation and dot notation.
-
+console.log(`Update encryption-protocol using bracket notation : ${communicationSpecs["encryption-protocol"]}`);
 /** EXERCISE 2: POPULATING ENEMY DATA **/
+
+
+    titleBorder("EXERCISE 2: POPULATING ENEMY DATA ", borderDesign);
 
 const scanningDrone = {};
 
@@ -32,7 +49,16 @@ const scanningDrone = {};
     Then, log a full statement using some of the properties of the object.
 */
 
+scanningDrone.classification = "Frigate";
+scanningDrone.weaponCount = 12;
+scanningDrone["shield-active"] = false;
+
+
+console.log(scanningDrone);
+
+
 /** EXERCISE 3: THE TERMINAL SELECTOR **/
+ titleBorder("EXERCISE 3: THE TERMINAL SELECTOR ", borderDesign);
 
 const airlockControls = {
 	pressurePsi: 14.7,
@@ -46,3 +72,5 @@ let userTerminalQuery = "oxygenLevel";
     TODO: Use the 'userTerminalQuery' variable to dynamically log the correct 
     stat from the 'airlockControls' object using bracket notation.
 */
+
+console.log(`System Diagnostic for ${userTerminalQuery}: ${airlockControls[userTerminalQuery]}`);
