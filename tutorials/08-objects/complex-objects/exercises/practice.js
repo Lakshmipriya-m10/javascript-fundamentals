@@ -1,11 +1,20 @@
 /**** TOPIC: PRACTICE ****/
+function heading(title,design)
+{
+ var clearTitle =title.trim();
+console.log(`${designBorder}\n ${clearTitle}\n ${designBorder}`);
 
+}
+
+ var designBorder = "****************************";   
 /*
     Practice drilling into deep object matrices and duplicating 
     complex structural records safely without memory leaks.
 */
 
 /** EXERCISE 1: DOWNLINK DATA EXTRACTION **/
+
+heading("EXERCISE 1: DOWNLINK DATA EXTRACTION ", designBorder)
 
 const stationHub = {
 	stationName: "Ceres Station",
@@ -19,8 +28,10 @@ const stationHub = {
     TODO: Use a template literal to log: 
     "Security at [stationName] is enforced by [governingBody]. Maintenance active at [second dock entry]."
 */
+console.log(`Security at ${stationHub.stationName} is enforced by ${stationHub.logistics.governingBody}. Maintenance active at ${stationHub.logistics.docks[1]}.`);
 
-/** EXERCISE 2: SHALLOW CLONE VERIFICATION **/
+    /** EXERCISE 2: SHALLOW CLONE VERIFICATION **/
+    heading(" EXERCISE 2: SHALLOW CLONE VERIFICATION  ", designBorder)
 
 const originalThrusterData = {
 	burnTimeSec: 420,
@@ -28,15 +39,21 @@ const originalThrusterData = {
 };
 
 // TODO: Create a shallow copy of 'originalThrusterData' named 'clonedThrusterData' using the spread operator.
+const clonedThrusterData = {...originalThrusterData};
 
 // TODO: Update 'clonedThrusterData.readouts.corePsi' to 500.
+clonedThrusterData.readouts ={ corePsi: 500 };
 
 /*
     TODO: Predict what originalThrusterData.readouts.corePsi will log.
     Uncomment the line below to check.
 */
+console.log(`Original value: `, originalThrusterData);
+console.log(`Showdow copy : `, clonedThrusterData);
 
 /** EXERCISE 3: LOGISTICS ENVELOPE DUPLICATION **/
+
+heading(" EXERCISE 3: LOGISTICS ENVELOPE DUPLICATION  ", designBorder)
 
 const secureVault = {
 	vaultId: "V-90",
@@ -49,3 +66,7 @@ const secureVault = {
     Push a new code string ("NEBULA") onto the deep copy's 'clearanceCodes' array.
     Log both arrays to verify they are completely decoupled.
 */
+const deepVaultClone = JSON.parse(JSON.stringify(secureVault));
+deepVaultClone.clearanceCodes.push("NEBULA");
+console.log(deepVaultClone);
+

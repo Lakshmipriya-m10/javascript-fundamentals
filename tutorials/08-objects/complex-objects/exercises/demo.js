@@ -12,7 +12,7 @@ const gunshipProfile = {
 };
 
 // DEMO: Access nested layers using chained references
-
+console.log(gunshipProfile.classSpecification);
 /** EXAMPLE 2 - SHALLOW COPY MUTATION RISK **/
 
 // DEMO: Create a shallow copy via the spread operator
